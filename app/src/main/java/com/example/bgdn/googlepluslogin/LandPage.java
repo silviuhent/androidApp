@@ -42,7 +42,7 @@ public class LandPage extends ActionBarActivity implements  GoogleApiClient.Conn
         TextView welcome_msg = (TextView)findViewById(R.id.welcome_msg);
         ImageView profile_img = (ImageView) findViewById(R.id.profile_img);
         welcome_msg.setText("Welcome " + globalState.getUsername() + "!");
-//              cssToast.makeText(this, mGoogleApiClient.isConnected()+" status_at_beginning", Toast.LENGTH_LONG);
+//              csToast.makeText(this, mGoogleApiClient.isConnected()+" status_at_beginning", Toast.LENGTH_LONG);
         new LoadProfileImage(profile_img).execute(globalState.getProfileImgUrl());
     }
 
