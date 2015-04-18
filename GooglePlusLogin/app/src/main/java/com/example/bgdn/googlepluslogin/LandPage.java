@@ -142,4 +142,4 @@ public class LandPage extends ActionBarActivity implements  GoogleApiClient.Conn
         }
 
     }
-}
+}//pushing comment from Git GUI.
