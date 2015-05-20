@@ -146,7 +146,7 @@ public class LoginWithGooglePlus extends ActionBarActivity implements View.OnCli
             return;
         }else if (!mResolvingError && connectionResult.hasResolution()) {
                 try {
-                    progressDialog = ProgressDialog.show(this, "Please wait!", "Connecting to Google Play services ...");
+                    progressDialog = ProgressDialog.show(this, "Please wait!", "Connecting to Google Play services ...");//comment added for test.
                     mResolvingError = true;
                     mConnectionResult.startResolutionForResult(this, REQUEST_CODE_RESOLVE_ERR);
                 } catch (IntentSender.SendIntentException e) {
